@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Manipulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="left">
+            <div class="manipulation">
+                Grayscale: 
+                <input type="range" name="Grayscale" id="grayscale" class="input_range">
+            </div>
+            <div class="manipulation">
+                Blur:
+                <input type="range" name="Blur" id="blur" class="input_range" min="0" max="10">
+            </div>
+            <div class="manipulation">
+                Brightness:
+                <input type="range" name="Brightness" id="brightness" class="input_range" min="100" max="200">
+            </div>
+            <div class="manipulation">
+                Contrast:
+                <input type="range" name="contrast" id="contrast" class="input_range" min="100" max="200">
+            </div>
+            <div class="manipulation">
+                Hue:
+                <input type="range" name="hue" id="hue" class="input_range" min="0" max="360">
+            </div>
+            <!-- <div class="manipulation">
+                Invert:
+                <input type="range" name="invert" id="invert" class="input_range" min="0" max="500">
+            </div>
+            <div class="manipulation">
+                Opacity:
+                <input type="range" name="opacity" id="opacity" class="input_range">
+            </div>
+            <div class="manipulation">
+                Saturate:
+                <input type="range" name="saturate" id="saturate" class="input_range">
+            </div>
+            <div class="manipulation">
+                Sepia:
+                <input type="range" name="sepia" id="sepia" class="input_range">
+            </div>         -->
+        </div>
+        <div class="right">
+            <div class="getimage">
+                <input type="url" name="imageurl" id="image_url">
+                <button>Select image</button>
+            </div>
+            <img src="image.jpg" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
